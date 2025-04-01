@@ -1,0 +1,110 @@
+/* Sidebar Container */
+.client_navbar-container {
+    width: 250px;
+    height: 100vh;
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+/* Top Section */
+.client_navbar-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+/* Logo */
+.client_navbar-logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.client_navbar-search {
+    display: flex;
+    align-items: center;
+    background: #212121;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.client_navbar-search-icon {
+    color: white;
+}
+
+.client_navbar-search-input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    width: 100%;
+}
+
+/* Navigation Menu */
+.client_navbar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.client_navbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.client_navbar-item:hover,
+.client_navbar-item.active {
+    background: #9e59103f;
+    cursor: pointer;
+}
+
+/* Profile Section */
+.client_navbar-profile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.client_navbar-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.client_navbar-username {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .client_navbar-container {
+        width: 220px;
+    }
+    .client_navbar-logo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .client_navbar-container {
+        display: none;
+    }
+}

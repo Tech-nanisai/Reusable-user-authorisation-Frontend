@@ -1,0 +1,10 @@
+.Sudent_reports-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    background-size: cover;
+    height: 100vh;
+}

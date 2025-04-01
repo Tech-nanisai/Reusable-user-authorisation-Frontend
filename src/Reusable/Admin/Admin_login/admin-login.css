@@ -1,0 +1,122 @@
+/* Fullscreen Background with Dual Gradient */
+.admin_login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+    background-image: url('https://res.cloudinary.com/drevfgyks/image/upload/v1711383241/pexels-caio-65550_vg0m3v.jpg');
+    background-size: cover;
+}
+
+/* Glassmorphism Login Box */
+.admin_login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+.admin_login-heading {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Input Group */
+.admin_login-input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.admin_login-input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    font-size: 16px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.admin_login-label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Move Placeholder Label on Focus */
+.admin_login-input:focus + .admin_login-label,
+.admin_login-input:not(:placeholder-shown) + .admin_login-label {
+    top: 5px;
+    font-size: 12px;
+    color: #00ff99;
+}
+
+/* Input Icons */
+.admin_login-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Login Button */
+.admin_login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #00ff99;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin_login-btn:hover {
+    background: #00cc77;
+}
+
+/* Spinner Animation */
+.admin_login-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Success Icon */
+.admin_login-success-icon {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #00ff99;
+}

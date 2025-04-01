@@ -1,0 +1,207 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .logo img {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .menu li:hover {
+    background-color: #ffffff;
+  }
+  
+  .shop .submenu {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 12px;
+  }
+  
+  .submenu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submenu li:hover {
+    background-color: #fff;
+    color: rgb(0, 115, 255);
+  }
+  
+  .cart {
+    padding: 15px 20px;
+    background-color:transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cart:hover {
+    background-color: #ffffff;
+  }
+  
+  .user-profile2 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .user-profile2 span {
+    margin-left: 10px;
+  }
+  
+  .user-profile2:hover {
+    background-color: #ffffff;
+  }
+    
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+      left: -200px;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  
+    .menu li {
+      padding: 12px 15px;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-top: 80px;
+    }
+    .submenu{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 12px;
+    }
+    .submenu li {
+      padding: 8px 15px;
+    }
+  
+    .cart {
+      padding: 12px 15px;
+    }
+  
+    .user-profile2 {
+      padding: 15px;
+    }
+  
+    .user-profile2 span {
+      font-size: 1em;
+    }
+    .LinkStyle{
+      text-decoration: none;
+      list-style-type: none;
+      color: rgb(50, 50, 50);
+    }
+   
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 150px;
+      left: -150px;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+    .menu li {
+      padding: 10px 10px;
+    }
+  
+    .submenu li {
+      padding: 6px 10px;
+    }
+  
+    .cart {
+      padding: 10px 10px;
+    }
+  
+    .user-profile2 {
+      padding: 10px;
+    }
+  
+    .user-profile2 span {
+      font-size: 0.9em;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-top: 80px;
+    }
+    .submenu{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 11px;
+    }
+    .LinkStyle{
+      text-decoration: none;
+      list-style-type: none;
+      color: rgb(79, 78, 78);
+    }
+  }
+
+/* For Tab Devices */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 80px;
+    font-size: 16px;
+  }
+}
+
+/* For Laptop Devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  
+}
+
+/* For Desktop or tv Devices */
+@media only screen and (min-width: 1200px){
+
+}
